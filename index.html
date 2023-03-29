@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Retiro</title>
+</head>
+<body>
+    <center>
+    <h1>Calcula tu plan de retiro</h1>
+    <label for="">Tasa</label>
+    <select name="" id="opcion" onchange="actualiza()">
+        <option value="0">Diaria</option>
+        <option value="1" selected="selected">Semanal</option>
+        <option value="2">Quincenal</option>
+        <option value="3">Mensual</option>
+        <option value="4">Trimestral</option>
+        <option value="5">Anual</option>
+    </select> <br>
+    <div id="etiqueta">
+        <label for="">Semanas:</label>
+    </div>
+    <input type="number" name="" id="Semanas"> <br>
+    <div id="etiqueta2">
+        <label for="">Monto semanal:</label>
+    </div>
+    <input type="number" name="" id="MSemanal"> <br>
+    <label for="">Inversion Inicial:</label> <br>
+    <input type="number" name="" id="IInicial" value=""> <br>
+    <input type="button" value="Calcular" onclick="calcula()"> <br>
+    <input type="button" value="Limpiar" onclick="limpiar()"> <br>
+    <div id="result"></div>
+    <div id="CONT"></div>
+</center>
+</body>
+<script src="script.js"></script>
+</html>

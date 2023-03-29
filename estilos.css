@@ -1,0 +1,124 @@
+*{
+    margin: 10px;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(222, 222, 224);
+}
+
+label{
+    color: rgb(255, 255, 255);
+}
+
+input{
+    background-color: rgb(88, 86, 86);
+    color: aliceblue;
+}
+
+select{
+    background-color: rgb(88, 86, 86);
+    color: aliceblue;
+}
+
+th{
+    color: aliceblue;
+    /* padding: 10%; */
+}
+
+td{
+    color: aliceblue;
+    /* padding: 15%; */
+}
+
+th, td {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 20px;
+  }
+
+  table {
+    border-spacing: 15px;
+    border-style: double;
+    
+  }
+
+  td {
+    border: orange 5px solid;
+  }
+  @media screen and (max-width: 800px){
+    .btn-menu{
+    transform: translateX(0px);
+    }
+
+    .logo_main{
+        display: none;
+    }
+
+    .nav{
+        width: 70%;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        padding: 0px;
+        transform: translateX(-100%);
+    }
+
+    .nav .wrap{
+        left: 0;
+    }
+
+    nav{
+        width: 100%;
+        position: absolute;
+        top: 60px;
+    }
+
+    nav li{
+        width: 100%;
+        margin-top: 35px;
+        padding: 0;
+        display: flex;
+    }
+
+    .logo_small{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    nav a{
+        width: 100%;
+        display: block;
+        padding: 28px;
+        margin: 0;
+    }
+
+    .nav-toggle{
+        transition: all 300ms cubic-bezier(1,0,0,1);
+        transform: translateX(0%);
+    }
+
+    .imagenes{
+        max-width: 80%;
+    margin: 20px auto;
+    }
+
+    .tabla{
+        max-width: 80%;
+    margin: 20px auto;
+    }
+
+    th, td {
+        padding-top: .8px;
+        padding-bottom: 1.2px;
+        padding-left: 1.5px;
+        padding-right: 2.5px;
+      }
+}
+
